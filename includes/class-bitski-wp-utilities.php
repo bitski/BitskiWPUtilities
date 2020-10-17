@@ -136,18 +136,18 @@ class Bitski_Wp_Utilities
                      ) . 'public/class-bitski-wp-utilities-public.php';
 
         /**
+         * The file responsible for handling all global functions.
+         */
+        require_once plugin_dir_path(
+                         dirname(__FILE__)
+                     ) . 'includes/bitski-wp-utilities-global-functions.php';
+
+        /**
          * The class responsible for providing mail helper methods.
          */
         require_once plugin_dir_path(
                          dirname(__FILE__)
                      ) . 'includes/global-helpers/class-bitski-wp-utilities-mail-helper.php';
-
-        /**
-         * The class responsible for handling all global functions.
-         */
-        require_once plugin_dir_path(
-                         dirname(__FILE__)
-                     ) . 'includes/bitski-wp-utilities-global-functions.php';
 
         $this->loader = new Bitski_Wp_Utilities_Loader();
     }
